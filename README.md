@@ -17,3 +17,8 @@ urlpatterns = [
     path('', views.index),
 ]
 ```
+9. 번역작업
+```shell
+python manage.py makemigrations
+python manage.py migrate
+```
