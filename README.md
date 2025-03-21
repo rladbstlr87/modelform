@@ -22,3 +22,22 @@ urlpatterns = [
 python manage.py makemigrations
 python manage.py migrate
 ```
+10. admin superuser
+```shell
+python manage.py createsuperuser
+```
+11. run server
+```shell
+python manage.py runserver
+```
+12. 베이스 html 만들기
+- 최상단에 templates 폴더 만들기
+- `settings.py`에서 templates 경로 추가
+- 최상단 경로 templates에 base.html 만들고 뼈대 추가하기
+```html
+<body>
+    <h1>여기는 base</h1>
+    {% block body %}
+    {% endblock %}
+</body>
+```
