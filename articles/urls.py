@@ -10,4 +10,7 @@ urlpatterns = [
     # Create (이번엔 new와 create를 이 create 하나에 다 넣었음)
     path('create/', views.create, name='create'),
     
+    # Delete
+    path('<int:id>/delete/', views.delete, name='delete'),
+    
 ]
