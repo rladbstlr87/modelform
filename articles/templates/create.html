@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block body %}
+    <form action="" method="POST">
+        <!-- 메소드 포스트 썼으면 csrf토큰 무조건 필요함 -->
+        {% csrf_token %}
+        {{form}}
+        <input type="submit">
+    </form>
+    {% endblock %}

@@ -47,3 +47,9 @@ python manage.py runserver
 from django.urls import path
 from . import views
 ```
+---
+큰 종이에 베이스 -> 그 안에 인덱스 -> 인덱스에 게시글 전체 불러오기 -> 
+
+modelforms 하는 이유
+1. html코드를 편하게 만들기 위해서
+2. 밸리데이션 체크(유효성 검사) : 데이터의 형식이 올바른지 체크
