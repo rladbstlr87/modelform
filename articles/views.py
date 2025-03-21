@@ -24,16 +24,13 @@ def create(request):
         if form.is_valid():
             form.save()
             return redirect('articles:index')
-        else:
-            context = {
-                'form': form,
-            }
-            return render(request, 'create.html', context)
+    # 1. GET 요청    
     else:
+        # 2. 비어있는 form을 만든다
         form = ArticleForm()
-
-        context = {
-            'form': form,
-        }
-
-        return render(request, 'create.html', context)
+    # 3. context dict에 비어있는 form을 담는다
+    context = {
+        'form': form,
+    }
+    # 4. create.html을 렌더링
+    return render(request, 'create.html', context)
