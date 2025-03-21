@@ -41,3 +41,9 @@ python manage.py runserver
     {% endblock %}
 </body>
 ```
+13. app폴더에 urls.py 만들기
+- django의 path / 현재폴더에 views 불러오기
+```py
+from django.urls import path
+from . import views
+```
